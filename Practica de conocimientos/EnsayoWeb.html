@@ -1,0 +1,215 @@
+<!DOCTYPE html> <!-- con ! + enter te crea la estructura del HTML -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+    <link rel="stylesheet" href="EnsayoCSS.css">
+    <script src="EnsayoJS.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="PokéApi logo">
+            </div>
+            
+            <div class="navB">
+                <button id="a">A</button>
+                <button id="b">B</button>
+                <button id="c">C</button>
+                <button id="d">D</button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main id="contenido">
+        <section id="index">
+            <h1>Index</h1>
+                <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre mi">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#desplegable">Fastidiar</a></li>
+            </ul>
+            <img src="https://ih1.redbubble.net/image.527988854.0033/farp,small,wall_texture,product,750x1000.jpg" alt="Kanji Chikara">
+        </section>
+        
+
+        <section id="inicio">
+            <div class="wiii">
+                <p>No sé qué poner y ya wiiiiiii</p>
+                <p>probando el ctrl + shift + p con wrap y dip.wiii</p>     <!-- ctrl + shift + p >> wrap (encapsular con abreviatura) >> div.wii-->
+            </div>
+            <div><p>div*3</p></div> <!-- div*3-->
+            <div></div>
+            <div></div>
+            
+            <div>               <!-- div>h1 para crear un h1 dentro de un div directamente -->
+                <h1>div>h1 div>h1 para crear un h1 dentro de un div directamente</h1>     
+            </div>
+
+            <div>               <!-- (div>h1)*2 para crear 2 h1 en 2 div -->
+                <h1>(div>h1)*2 para crear 2 h1 en 2 div</h1>
+            </div>
+            <div>
+                <h1></h1>
+            </div>
+
+            <!-- div.holiwis para hacer un div con su id -->
+            <div class="holiwis">div.holiwis para hacer un div con clase</div>
+
+            <!-- div#id para hacer un div con su id -->
+            <div id="id">div#id para hacer un div con su id</div>
+
+        
+
+        </section>
+        <section id="sobre_mi">
+
+            <h2>Sobre mí</h2>
+            <br>
+            <h3>Aficiones:</h3>
+            <ul>
+                <li>manga</li>
+                <li>musica</li>
+                <li>videjuegos</li>
+                <li>cine</li>
+                <li>libros</li>
+            </ul>
+            <br>
+            <h3>Habilidades:</h3>
+            <ol>
+                <li>dormir</li>
+                <li>seguir duermiendo</li>
+                <li>dormir un poco más</li>
+            </ol>
+            <br>
+            <h3>Tecnologías conocidas:</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Dominio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>sí</td>
+                    </tr>
+                    <tr>
+                        <td>JAVA</td>
+                        <td>sí</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>sí</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="desplegable">
+            <label for="joder">Formas de tocar los huevos: </label>
+            <select id="joder">
+                <option value="">Selecciona un tipo</option>
+                <option value="cosquillas">Cosquillas</option>
+                <option value="patada">Patada en la espunilla</option>
+                <option value="dinero">Pedir dinero</option>
+            </select>
+
+        </section>
+
+        <section id="buttons">
+            <fieldset> <!-- Esto solo crea un recuadro para los checboxes para agruparlos visualmente -->
+                <legend>Habilidades</legend> <!-- Solo es el titulo del recuadro -->
+        
+                <label><input type="checkbox" name="habilidades" value="molestar">Molestar</label>
+                <label><input type="checkbox" name="habilidades" value="humor">Humor negro</label>
+                <label><input type="checkbox" name="habilidades" value="vaguear">vaguear</label>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formNom">
+
+                <div class="campo">
+                    <label for="nombre">Nombre: </label><!-- label Solo es una etiqueta descriptiva  y el for es para indicar a qué id pertenece-->
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Papadopoulos" required> <!-- el required es para indicar campo obligatorio -->
+                </div>
+                <div class="campo">   
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" placeholder="Ej: Papadopoulos@gmail.com" required>
+                </div>
+                <div class="campo">    
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Ej: Me cago en tu puta madre" rows="5" required></textarea> <!-- el rows es para indicar cuanto va a medir de alto (no es obligatorio) -->
+                </div>
+
+                <section id="aviso"></section>
+
+                <div class="submitB">
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section id="relleno">
+            <div class="tabla">1</div>
+            <div class="tabla">2</div>
+            <div class="tabla">3</div>
+        </section>
+
+        <section id="relleno2">
+            <div class="tab">a</div>
+            <div class="tab">b</div>
+            <div class="tab">c</div>
+        </section>
+
+        <section id="contacto">
+            <div class="formulario2">
+                <div class="field">
+                    <label for="nom">Nombre:</label>
+                    <input type="text" id="nom" placeholder="Ej: José" required>
+                </div>
+                <div class="field">
+                    <label for="correo">Email:</label>
+                    <input type="text" id="correo" placeholder="Ej: jose@gmail.com" required>
+                </div>
+                <div class="field">
+                    <label for="texto">Mensaje:</label>
+                    <textarea  id="texto" name="texto" placeholder="Ej: Buenos días, necesito ayuda con..." rows="3" required></textarea>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="js">
+            <label for="palabra">Escribe una palabra: </label>
+            <input type="text" id="palabra" placeholder="Ej: Patata">
+            <button onclick="palindromos()">Verificar</button>
+            <p id="resultado"></p>
+
+        </section>
+       
+
+        
+        
+        
+
+    </main>
+
+<footer>
+    <p>&copy; Michi intento de recordar todo licensed</p>
+</footer>
+</body>
+
+</html>

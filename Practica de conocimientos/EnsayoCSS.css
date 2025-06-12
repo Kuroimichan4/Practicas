@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color:  rgb(90, 91, 95);
+    color: rgb(0, 0, 0); /*letras*/
+    margin-bottom: 6%;
+}
+
+.navbar { /*clase*/
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    align-items: center;    /* alinea en elcentro verticalmente*/
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;                 /*para que se ajuste el navbar arriba y a los bordes*/
+    left: 0;         
+    right: 0;  
+    z-index: 1000;
+    flex-wrap: wrap;       /* Para que se bajen si no caben */
+}
+
+
+/*estructura botones nav*/
+.navbar .navB {
+    display: flex;
+    flex-wrap: wrap;       /* Para que se bajen si no caben */
+}
+
+/*css botones nav*/
+.navbar button {
+    background-color: brown;
+    border-color: white; 
+    padding: 15px 35px;     /*ancho y largo de los botones*/
+    border-radius: 15px;    /*redondeo botones*/
+    margin: 10px;           /* separacioon con el resto*/
+    cursor: pointer;        /*manita cuando está encima*/
+}
+
+/*Esto es para poner el efecto zoom en los botones*/
+.navbar button:hover {
+    transform: scale(1.10);
+    background: linear-gradient(to bottom, #e93313 50%,#9b220d 90%); /*cambia el fondo del boton y con gradient le pone 2 colores*/
+}
+
+.logo img {
+    vertical-align: middle;
+    padding: 1vh; /*separación con los bordes*/
+
+}
+
+#index {
+    padding: 10vh;
+}
+
+#index a {
+    text-decoration: none; /* quita el subrayado */
+    color: inherit;  /*y quita el color de mierda que lleva*/
+}
+
+img {
+    height: 100px;
+    padding: 30px;
+}
+
+#inicio { /*color seccion id inicio */
+    background-color: rgb(139, 150, 194);
+    padding: 10vh
+}
+
+#sobre_mi {
+    padding: 10vh;
+}
+
+#desplegable {
+    padding: 10vh;
+}
+
+/*esto es por la leyende da Habilidades en el fieldset que no se centraba*/
+legend {
+  width: 30%;           /*el ancho del legend */
+  text-align: center;
+  font-weight: bold;    /*en negrita*/
+  font-size: 1.5em;     /*tamaño de fuente*/
+}
+
+fieldset {
+    padding: 5vh;       /*separación con los bordes*/
+    margin: 10vh;       /* separacioon con el resto*/
+    display: flex;
+    flex-wrap: wrap; /*si no cabe en una linea salta a la siguienta*/
+    justify-content: center;
+    gap: 10px; /* da espacioentre los label*/
+    border-radius: 5px;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;           /* espacio entre el checkbox y el texto */
+    margin: 5px 20px;   /* separación entre cada label */
+} 
+#contacto {
+    padding: 10vh;
+    
+}
+
+#contacto h2 {
+    margin-bottom: 10%;
+}
+
+#formNom {
+    width: 100%;                   /*ocupa todo el ancho*/
+    max-width: 500px;
+    padding: 10vh;                 /*espacio interno*/
+    margin: 0 auto;                 /* Esto lo centra horizontalmente (auto a izquierda y derecha) */
+    border: 2px solid white;     /*le da borde al form*/
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;        /*Para que el padding no lo joda y se pase del ancho se incluye el padding en el tamaño del formulario*/
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);  /*sombra form*/
+    background-color: rgb(176, 176, 179);
+}
+
+.campo {
+    margin-bottom: 10%;
+    display: flex;      /*sa orden flexible*/
+    flex-direction: column;     /*los pone en columna*/
+    
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;      /*texto en negrita*/
+    font-size: 1.5em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button[type="submit"]  {
+    padding: 4% 8%;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+.formulario2 {
+    background-color: #444;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10vh;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.field {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#relleno {
+    padding: 10vh;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(31, 33, 37);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pokemon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    /*esto es para que cuando no quepa una tarjeta se ponga en la siguiente linea*/
+    gap: 20px;
+    padding: 5vh;
+}
+
+.pokemon-card {
+    background: linear-gradient(to bottom right, #f5f5f5, #7c7c7c);
+    /*background-color: #eee;*/
+    border: 5px solid black;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.pokemon-card img {
+    width: 100px;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05); 
+}
+
+#relleno {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* grid-template-columns: 100px 100px 100px*/
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);   
+    /*define el alto de las filas que no se definen explícitamente (las que se generan automáticamente en un display: grid*/
+}
+
+.tabla {
+    background-color: #9b220d;
+    justify-content: space-evenly; /*espacio entre items y borde*/
+}
+
+#relleno2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab {
+    background-color: aqua;
+    padding: 6%;
+}
+
+
+
+/* esto es para hacer la animación del botón b de mierda*/
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* hasta aquí */
+
+}
