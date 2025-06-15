@@ -174,36 +174,113 @@
         </section>
 
         <section id="contacto">
-            <div class="formulario2">
-                <div class="field">
-                    <label for="nom">Nombre:</label>
-                    <input type="text" id="nom" placeholder="Ej: José" required>
+            <form id="formulario2" class="formulario2">
+                <div id="rellenables" class="rellenables">
+                    <div class="field">
+                        <label for="nom">Nombre:</label>
+                        <input type="text" id="nom" placeholder="Ej: José" required>
+                    </div>
+                    <div class="field">
+                        <label for="correo">Email:</label>
+                        <input type="text" id="correo" placeholder="Ej: jose@gmail.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="texto">Mensaje:</label>
+                        <textarea  id="texto" name="texto" placeholder="Ej: Buenos días, necesito ayuda con..." rows="3" required></textarea>
+                    </div>
                 </div>
-                <div class="field">
-                    <label for="correo">Email:</label>
-                    <input type="text" id="correo" placeholder="Ej: jose@gmail.com" required>
+
+                <div id="extra" class="submitB">
+                    <button type="button" onclick="añadirCampo()">Campo Extra</button>
                 </div>
-                <div class="field">
-                    <label for="texto">Mensaje:</label>
-                    <textarea  id="texto" name="texto" placeholder="Ej: Buenos días, necesito ayuda con..." rows="3" required></textarea>
+
+                <div id="validar" class="submitB">
+                    <button type="button" onclick="formValidar()">Validar</button>
                 </div>
+
+                <div class="submitB">
+                    <button type="submit">Enviar</button>
+                </div>
+
             </div>
 
 
         </section>
 
-        <section id="js">
+        <section id="js" class="js">
             <label for="palabra">Escribe una palabra: </label>
             <input type="text" id="palabra" placeholder="Ej: Patata">
-            <button onclick="palindromos()">Verificar</button>
+            <button type="button" onclick="palindromos()">Verificar</button>
             <p id="resultado"></p>
 
         </section>
        
+        <section class="sigmaTest">
 
-        
-        
-        
+            <div class="bottTest">
+                <button type="button" onclick="bottOpen()">Clica!</button>
+                <button type="button" onclick="bottInput()">Clica!</button>
+                <button type="button" onclick="bottCampos()">Clica!</button>
+                <button type="button" onclick="bottBG()">Clica!</button>
+                <button type="button" onclick="bottImg()">Clica!</button>
+                <button type="button" onclick="bottClick()">Clica!</button>
+            </div>
+
+            <div class="botContador">
+                <p id="contador">Click: 0</p>
+            </div>
+
+            <div class="bottImg">
+                <img id="pikachu" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" style="display:none;">
+            </div>
+
+            <div id="solo" class="botonB">
+                <p id="textOculto" style="display: none">Soy un ninja!</p>
+                <button type="button" onclick="bottMostrar()">Soy bonito</button>
+
+            </div>
+
+            <div class="sumaMasMenos">
+                <button type="button" onclick="botMas()">+</button>
+                <p id="contadorMasMenos"><strong>0</strong></p>
+                <button type="button" onclick="botMenos()" >-</button>
+            </div>
+
+            <div class="fechaHora">
+                <button type="button" onclick="mostrarFecha()" >Ver Hora</button>
+                <p id="hora"></p>
+            </div>
+
+            <div class="controlEdad">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" placeholder="Ej: 28" >
+                <button type="button" onclick="verificarEdad()">Verificar</button>
+                <p id="respuesta"></p>
+            </div>
+
+            <div class="aleatorio">
+                <p id="num"></p>
+                <button type="button" onclick="generador()">Random</button>
+            </div>
+
+            <div id="fetch" class="fetch">
+                <div class="carga">
+                    <button type="button" onclick="cargarFetch()">¡Sorpresa!</button>
+                </div>
+
+                <div id="pokemon-container" class="pokemon-container"></div>
+            </div>
+        </section>
+
+        <div class="fech2">
+            <div class="carga2">
+                <button type="button" onclick="cargarFetch2()">¡Sorpresa!</button>
+            </div>
+
+            <div id="pokemon-container2" class="pokemon-container2">
+
+            </div>
+        </div>
 
     </main>
 
